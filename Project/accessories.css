@@ -1,0 +1,109 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333333;
+}
+.cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: bold;
+  width: 80%;
+}
+.Title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  gap: 30px;
+}
+.title-text {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.Description {
+  font-size: 1rem;
+  color: gray;
+}
+
+.btn,
+.dropdown-menu {
+  background-color: white;
+  border: none;
+}
+
+.btn:hover {
+  background-color: white;
+  border: none;
+}
+
+/*card*/
+
+.cartContainer {
+  display: grid;
+  grid-template-columns: repeat(4, max-content);
+
+  gap: 40px;
+
+  margin: 0 auto;
+}
+
+@media (max-width: 1195px) {
+  .cartContainer {
+    grid-template-columns: repeat(3, max-content);
+  }
+}
+@media (max-width: 1000px) {
+  .cartContainer {
+    grid-template-columns: repeat(2, max-content);
+  }
+}
+@media (max-width: 650px) {
+  .cartContainer {
+    grid-template-columns: repeat(1, max-content);
+  }
+}
+.cart {
+  display: flex;
+  flex-direction: column;
+
+  width: max-content;
+  height: max-content;
+}
+
+.cart img {
+  height: 400px;
+  width: 240px;
+
+  margin-bottom: 6px;
+}
+
+.cart p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-container button {
+  margin: 12px;
+  padding: 1px;
+  border: none;
+
+  background-color: white;
+
+  font-size: 17px;
+}

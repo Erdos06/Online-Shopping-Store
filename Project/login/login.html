@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="login.css" />
+  <body>
+    <div class="main">
+      <div class="left-side"></div>
+
+      <div class="right-side">
+        <div class="root">
+          <div class="img-field">
+            <img
+              src="https://download.logo.wine/logo/Zara_(retailer)/Zara_(retailer)-Logo.wine.png"
+              alt="image"
+            />
+          </div>
+
+          <div class="login-island">
+            <div class="text">Log in</div>
+            <div class="fields">
+              <input type="text" class="fieldUsername" placeholder="username" />
+              <input type="password" class="fieldPassword" placeholder="password" />
+            </div>
+
+            <div class="buttons">
+              <button class="login-btn" onclick="loginBtnPressed()">Log in</button>
+              <button class="signup-btn" onclick="signupBtnPressed()">Sign up</button>
+            </div>
+
+            <div class="help-text" style="color: red; font-size: 16px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../backend/login.js"></script>
+  </body>
+</html>
